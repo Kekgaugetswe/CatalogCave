@@ -1,0 +1,47 @@
+{
+  "version": "0.2.0",
+  "compounds": [
+    {
+      "name": "Launch API and Web",
+      "configurations": ["Launch API", "Launch Web"]
+    }
+  ],
+  "configurations": [
+    {
+      "name": "Launch API",
+      "type": "coreclr",
+      "request": "launch",
+      "preLaunchTask": "build-api",
+      "program": "${workspaceFolder}/CatalogCave.Api/bin/Debug/net8.0/CatalogCave.Api.dll",
+      "args": [],
+      "cwd": "${workspaceFolder}/CatalogCave.Api",
+      "stopAtEntry": false,
+      "serverReadyAction": {
+        "action": "openExternally",
+        "pattern": "\\bNow listening on:\\s+(https?://\\S+)"
+      },
+      "env": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      },
+      "dotnetRunMessages": true
+    },
+    {
+      "name": "Launch Web",
+      "type": "coreclr",
+      "request": "launch",
+      "preLaunchTask": "build-web",
+      "program": "${workspaceFolder}/CatalogCave.Web/bin/Debug/net8.0/CatalogCave.Web.dll",
+      "args": [],
+      "cwd": "${workspaceFolder}/CatalogCave.Web",
+      "stopAtEntry": false,
+      "serverReadyAction": {
+        "action": "openExternally",
+        "pattern": "\\bNow listening on:\\s+(https?://\\S+)"
+      },
+      "env": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      },
+      "dotnetRunMessages": true
+    }
+  ]
+}

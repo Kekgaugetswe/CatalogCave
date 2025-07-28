@@ -1,0 +1,11 @@
+/Users/kekgaugetswesebati/Development/Learning/CatalogCave/CatalogCave.Domain/bin/Debug/net8.0/CatalogCave.Domain.deps.json
+/Users/kekgaugetswesebati/Development/Learning/CatalogCave/CatalogCave.Domain/bin/Debug/net8.0/CatalogCave.Domain.dll
+/Users/kekgaugetswesebati/Development/Learning/CatalogCave/CatalogCave.Domain/bin/Debug/net8.0/CatalogCave.Domain.pdb
+/Users/kekgaugetswesebati/Development/Learning/CatalogCave/CatalogCave.Domain/obj/Debug/net8.0/CatalogCave.Domain.GeneratedMSBuildEditorConfig.editorconfig
+/Users/kekgaugetswesebati/Development/Learning/CatalogCave/CatalogCave.Domain/obj/Debug/net8.0/CatalogCave.Domain.AssemblyInfoInputs.cache
+/Users/kekgaugetswesebati/Development/Learning/CatalogCave/CatalogCave.Domain/obj/Debug/net8.0/CatalogCave.Domain.AssemblyInfo.cs
+/Users/kekgaugetswesebati/Development/Learning/CatalogCave/CatalogCave.Domain/obj/Debug/net8.0/CatalogCave.Domain.csproj.CoreCompileInputs.cache
+/Users/kekgaugetswesebati/Development/Learning/CatalogCave/CatalogCave.Domain/obj/Debug/net8.0/CatalogCave.Domain.dll
+/Users/kekgaugetswesebati/Development/Learning/CatalogCave/CatalogCave.Domain/obj/Debug/net8.0/refint/CatalogCave.Domain.dll
+/Users/kekgaugetswesebati/Development/Learning/CatalogCave/CatalogCave.Domain/obj/Debug/net8.0/CatalogCave.Domain.pdb
+/Users/kekgaugetswesebati/Development/Learning/CatalogCave/CatalogCave.Domain/obj/Debug/net8.0/ref/CatalogCave.Domain.dll

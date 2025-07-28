@@ -1,0 +1,376 @@
+{
+  "format": 1,
+  "restore": {
+    "/Users/kekgaugetswesebati/Development/Learning/CatalogCave/CatalogCave.Api/CatalogCave.Api.csproj": {}
+  },
+  "projects": {
+    "/Users/kekgaugetswesebati/Development/Learning/CatalogCave/CatalogCave.Api/CatalogCave.Api.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/kekgaugetswesebati/Development/Learning/CatalogCave/CatalogCave.Api/CatalogCave.Api.csproj",
+        "projectName": "CatalogCave.Api",
+        "projectPath": "/Users/kekgaugetswesebati/Development/Learning/CatalogCave/CatalogCave.Api/CatalogCave.Api.csproj",
+        "packagesPath": "/Users/kekgaugetswesebati/.nuget/packages/",
+        "outputPath": "/Users/kekgaugetswesebati/Development/Learning/CatalogCave/CatalogCave.Api/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/kekgaugetswesebati/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "/usr/local/share/dotnet/library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "/Users/kekgaugetswesebati/Development/Learning/CatalogCave/CatalogCave.Domain/CatalogCave.Domain.csproj": {
+                "projectPath": "/Users/kekgaugetswesebati/Development/Learning/CatalogCave/CatalogCave.Domain/CatalogCave.Domain.csproj"
+              },
+              "/Users/kekgaugetswesebati/Development/Learning/CatalogCave/CatalogCave.Infrastructure/CatalogCave.Infrastructure.csproj": {
+                "projectPath": "/Users/kekgaugetswesebati/Development/Learning/CatalogCave/CatalogCave.Infrastructure/CatalogCave.Infrastructure.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.100"
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Serilog.AspNetCore": {
+              "target": "Package",
+              "version": "[9.0.0, )"
+            },
+            "Serilog.Settings.Configuration": {
+              "target": "Package",
+              "version": "[9.0.0, )"
+            },
+            "Serilog.Sinks.Console": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[6.6.2, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/9.0.101/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/kekgaugetswesebati/Development/Learning/CatalogCave/CatalogCave.Application/CatalogCave.Application.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/kekgaugetswesebati/Development/Learning/CatalogCave/CatalogCave.Application/CatalogCave.Application.csproj",
+        "projectName": "CatalogCave.Application",
+        "projectPath": "/Users/kekgaugetswesebati/Development/Learning/CatalogCave/CatalogCave.Application/CatalogCave.Application.csproj",
+        "packagesPath": "/Users/kekgaugetswesebati/.nuget/packages/",
+        "outputPath": "/Users/kekgaugetswesebati/Development/Learning/CatalogCave/CatalogCave.Application/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/kekgaugetswesebati/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "/usr/local/share/dotnet/library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "/Users/kekgaugetswesebati/Development/Learning/CatalogCave/CatalogCave.Domain/CatalogCave.Domain.csproj": {
+                "projectPath": "/Users/kekgaugetswesebati/Development/Learning/CatalogCave/CatalogCave.Domain/CatalogCave.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.100"
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/9.0.101/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/kekgaugetswesebati/Development/Learning/CatalogCave/CatalogCave.Common/CatalogCave.Common.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/kekgaugetswesebati/Development/Learning/CatalogCave/CatalogCave.Common/CatalogCave.Common.csproj",
+        "projectName": "CatalogCave.Common",
+        "projectPath": "/Users/kekgaugetswesebati/Development/Learning/CatalogCave/CatalogCave.Common/CatalogCave.Common.csproj",
+        "packagesPath": "/Users/kekgaugetswesebati/.nuget/packages/",
+        "outputPath": "/Users/kekgaugetswesebati/Development/Learning/CatalogCave/CatalogCave.Common/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/kekgaugetswesebati/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "/usr/local/share/dotnet/library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.100"
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/9.0.101/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/kekgaugetswesebati/Development/Learning/CatalogCave/CatalogCave.Domain/CatalogCave.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/kekgaugetswesebati/Development/Learning/CatalogCave/CatalogCave.Domain/CatalogCave.Domain.csproj",
+        "projectName": "CatalogCave.Domain",
+        "projectPath": "/Users/kekgaugetswesebati/Development/Learning/CatalogCave/CatalogCave.Domain/CatalogCave.Domain.csproj",
+        "packagesPath": "/Users/kekgaugetswesebati/.nuget/packages/",
+        "outputPath": "/Users/kekgaugetswesebati/Development/Learning/CatalogCave/CatalogCave.Domain/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/kekgaugetswesebati/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "/usr/local/share/dotnet/library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.100"
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/9.0.101/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/kekgaugetswesebati/Development/Learning/CatalogCave/CatalogCave.Infrastructure/CatalogCave.Infrastructure.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/kekgaugetswesebati/Development/Learning/CatalogCave/CatalogCave.Infrastructure/CatalogCave.Infrastructure.csproj",
+        "projectName": "CatalogCave.Infrastructure",
+        "projectPath": "/Users/kekgaugetswesebati/Development/Learning/CatalogCave/CatalogCave.Infrastructure/CatalogCave.Infrastructure.csproj",
+        "packagesPath": "/Users/kekgaugetswesebati/.nuget/packages/",
+        "outputPath": "/Users/kekgaugetswesebati/Development/Learning/CatalogCave/CatalogCave.Infrastructure/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/kekgaugetswesebati/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "/usr/local/share/dotnet/library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "/Users/kekgaugetswesebati/Development/Learning/CatalogCave/CatalogCave.Application/CatalogCave.Application.csproj": {
+                "projectPath": "/Users/kekgaugetswesebati/Development/Learning/CatalogCave/CatalogCave.Application/CatalogCave.Application.csproj"
+              },
+              "/Users/kekgaugetswesebati/Development/Learning/CatalogCave/CatalogCave.Common/CatalogCave.Common.csproj": {
+                "projectPath": "/Users/kekgaugetswesebati/Development/Learning/CatalogCave/CatalogCave.Common/CatalogCave.Common.csproj"
+              },
+              "/Users/kekgaugetswesebati/Development/Learning/CatalogCave/CatalogCave.Domain/CatalogCave.Domain.csproj": {
+                "projectPath": "/Users/kekgaugetswesebati/Development/Learning/CatalogCave/CatalogCave.Domain/CatalogCave.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.100"
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.Extensions.Caching.Memory": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "Microsoft.Extensions.Configuration": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "Microsoft.Extensions.DependencyInjection.Abstractions": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "Microsoft.Extensions.Http": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "Microsoft.Extensions.Options": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "Microsoft.Extensions.Options.ConfigurationExtensions": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/9.0.101/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

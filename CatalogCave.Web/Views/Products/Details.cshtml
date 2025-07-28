@@ -1,0 +1,41 @@
+﻿@model CatalogCave.Web.ViewModels.Products.ProductViewModel
+
+@{
+    ViewData["Title"] = "Product Details";
+}
+
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-md-5">
+            <img src="@Model.ImageUrl" alt="@Model.Title" class="img-fluid rounded border" />
+        </div>
+        <div class="col-md-7">
+            <h2>@Model.Title</h2>
+            <p class="text-muted">Category: @Model.Category</p>
+            <h4 class="text-primary">$@Model.Price</h4>
+
+            <div class="mb-2">
+                @for (int i = 1; i <= 5; i++)
+                {
+                    if (i <= Math.Floor(Model.Rating.Rate))
+                    {
+                        <i class="bi bi-star-fill text-warning"></i>
+                    }
+                    else if (i - Model.Rating.Rate <= 0.5)
+                    {
+                        <i class="bi bi-star-half text-warning"></i>
+                    }
+                    else
+                    {
+                        <i class="bi bi-star text-warning"></i>
+                    }
+                }
+                <span class="text-muted ms-2">@Model.Rating.Count reviews</span>
+            </div>
+
+            <p>@Model.Description</p>
+
+            <a asp-action="List" class="btn btn-secondary">← Back to Catalog</a>
+        </div>
+    </div>
+</div>

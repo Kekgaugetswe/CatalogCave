@@ -1,0 +1,78 @@
+﻿@model IEnumerable<CatalogCave.Web.ViewModels.Products.ProductViewModel>
+
+@{
+    ViewData["Title"] = "Product List";
+}
+
+<div class="container mt-5">
+    <h2 class="text-center mb-4">Product Catalog</h2>
+
+    <!-- Filter/Search Form -->
+    <form method="get" asp-action="List" class="row mb-4" id="filterForm">
+        <div class="col-md-4">
+            <input type="text" name="Search" class="form-control" placeholder="Search..." value="@Context.Request.Query["Search"]" oninput="document.getElementById('filterForm').submit()" />
+        </div>
+        <div class="col-md-3">
+            <select name="Category" class="form-select" onchange="this.form.submit()">
+                <option value="">All Categories</option>
+                <option value="electronics" selected="@("electronics" == Context.Request.Query["Category"])">Electronics</option>
+                <option value="jewelery" selected="@("jewelery" == Context.Request.Query["Category"])">Jewelery</option>
+                <option value="men's clothing" selected="@("men's clothing" == Context.Request.Query["Category"])">Men's Clothing</option>
+                <option value="women's clothing" selected="@("women's clothing" == Context.Request.Query["Category"])">Women's Clothing</option>
+            </select>
+        </div>
+        <div class="col-md-2">
+            <select name="SortBy" class="form-select" onchange="this.form.submit()">
+                <option value="">Sort By</option>
+                <option value="title" selected="@("title" == Context.Request.Query["SortBy"])">Title</option>
+                <option value="price" selected="@("price" == Context.Request.Query["SortBy"])">Price</option>
+            </select>
+        </div>
+        <div class="col-md-2">
+            <select name="Descending" class="form-select" onchange="this.form.submit()">
+                <option value="false" selected="@("false" == Context.Request.Query["Descending"])">Ascending</option>
+                <option value="true" selected="@("true" == Context.Request.Query["Descending"])">Descending</option>
+            </select>
+        </div>
+        <div class="col-md-1 d-flex gap-1">
+            <button type="submit" class="btn btn-primary w-100">Filter</button>
+            <a href="@Url.Action("List", "Products")" class="btn btn btn-outline-primary ">Clear</a>
+        </div>
+    </form>
+
+    <!-- Product Grid -->
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4">
+        @foreach (var product in Model)
+        {
+            <div class="col">
+                <div class="card h-100 shadow-sm">
+                    <img src="@product.ImageUrl" class="card-img-top" alt="@product.Title"
+                        style="height: 200px; object-fit: contain;" />
+                    <div class="card-body d-flex flex-column">
+                        <h6 class="card-title">@product.Title</h6>
+                        <p class="mb-1 fw-bold text-primary">$@product.Price</p>
+                        <p class="mb-1">
+                            @for (int i = 1; i <= 5; i++)
+                            {
+                                if (i <= Math.Floor(product.Rating.Rate))
+                                {
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                }
+                                else if (i - product.Rating.Rate <= 0.5)
+                                {
+                                    <i class="bi bi-star-half text-warning"></i>
+                                }
+                                else
+                                {
+                                    <i class="bi bi-star text-warning"></i>
+                                }
+                            }
+                            <small class="text-muted ms-1">@product.Rating.Count reviews</small>
+                        </p>
+                        <a asp-action="Details" asp-route-id="@product.Id" class="btn btn-outline-primary mt-auto">View Details</a>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+</div>

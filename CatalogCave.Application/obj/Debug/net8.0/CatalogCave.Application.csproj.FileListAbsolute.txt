@@ -1,0 +1,15 @@
+/Users/kekgaugetswesebati/Development/Learning/CatalogCave/CatalogCave.Application/bin/Debug/net8.0/CatalogCave.Application.deps.json
+/Users/kekgaugetswesebati/Development/Learning/CatalogCave/CatalogCave.Application/bin/Debug/net8.0/CatalogCave.Application.dll
+/Users/kekgaugetswesebati/Development/Learning/CatalogCave/CatalogCave.Application/bin/Debug/net8.0/CatalogCave.Application.pdb
+/Users/kekgaugetswesebati/Development/Learning/CatalogCave/CatalogCave.Application/bin/Debug/net8.0/CatalogCave.Domain.dll
+/Users/kekgaugetswesebati/Development/Learning/CatalogCave/CatalogCave.Application/bin/Debug/net8.0/CatalogCave.Domain.pdb
+/Users/kekgaugetswesebati/Development/Learning/CatalogCave/CatalogCave.Application/obj/Debug/net8.0/CatalogCave.Application.csproj.AssemblyReference.cache
+/Users/kekgaugetswesebati/Development/Learning/CatalogCave/CatalogCave.Application/obj/Debug/net8.0/CatalogCave.Application.GeneratedMSBuildEditorConfig.editorconfig
+/Users/kekgaugetswesebati/Development/Learning/CatalogCave/CatalogCave.Application/obj/Debug/net8.0/CatalogCave.Application.AssemblyInfoInputs.cache
+/Users/kekgaugetswesebati/Development/Learning/CatalogCave/CatalogCave.Application/obj/Debug/net8.0/CatalogCave.Application.AssemblyInfo.cs
+/Users/kekgaugetswesebati/Development/Learning/CatalogCave/CatalogCave.Application/obj/Debug/net8.0/CatalogCave.Application.csproj.CoreCompileInputs.cache
+/Users/kekgaugetswesebati/Development/Learning/CatalogCave/CatalogCave.Application/obj/Debug/net8.0/CatalogC.0BF4FFC5.Up2Date
+/Users/kekgaugetswesebati/Development/Learning/CatalogCave/CatalogCave.Application/obj/Debug/net8.0/CatalogCave.Application.dll
+/Users/kekgaugetswesebati/Development/Learning/CatalogCave/CatalogCave.Application/obj/Debug/net8.0/refint/CatalogCave.Application.dll
+/Users/kekgaugetswesebati/Development/Learning/CatalogCave/CatalogCave.Application/obj/Debug/net8.0/CatalogCave.Application.pdb
+/Users/kekgaugetswesebati/Development/Learning/CatalogCave/CatalogCave.Application/obj/Debug/net8.0/ref/CatalogCave.Application.dll

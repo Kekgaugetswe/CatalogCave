@@ -1,0 +1,89 @@
+﻿@{
+    ViewData["Title"] = "Home Page Documentation";
+}
+
+<div class="container mt-5">
+    <div class="card shadow-lg">
+        <div class="card-body">
+            <h1 class="card-title mb-4 text-center">
+                <i class="bi bi-file-earmark-text"></i> Product Catalog Documentation
+            </h1>
+
+            <h4 class="mt-4"><i class="bi bi-check-circle-fill"></i> Features Implemented</h4>
+            <ul class="list-group list-group-flush mb-4">
+                <li class="list-group-item"><i class="bi bi-search"></i> <strong>Live Search:</strong> Users can type in the search box and see filtered results instantly.</li>
+                <li class="list-group-item"><i class="bi bi-funnel"></i> <strong>Category Filtering:</strong> Dropdown to filter by categories like Electronics, Jewelery, etc.</li>
+                <li class="list-group-item"><i class="bi bi-sort-alpha-down"></i> <strong>Sorting:</strong> Users can sort products by <code>Title</code> or <code>Price</code> in ascending/descending order.</li>
+                <li class="list-group-item"><i class="bi bi-x-circle"></i> <strong>Clear Filters Button:</strong> Clears all filters and resets the product listing.</li>
+                <li class="list-group-item"><i class="bi bi-star-fill"></i> <strong>Product Ratings:</strong> Each product shows star rating and review count.</li>
+                <li class="list-group-item"><i class="bi bi-grid"></i> <strong>Responsive Product Cards:</strong> Grid adapts to mobile, tablet, and desktop viewports.</li>
+                <li class="list-group-item"><i class="bi bi-box-arrow-in-right"></i> <strong>Details Navigation:</strong> "View Details" button navigates to the product's detail page.</li>
+            </ul>
+
+            <h4><i class="bi bi-diagram-3-fill"></i> Route</h4>
+            <div class="alert alert-info">GET <code>/Products/List</code></div>
+
+            <h4><i class="bi bi-filters"></i> Query Parameters</h4>
+            <table class="table table-bordered table-striped">
+                <thead class="table-light">
+                    <tr>
+                        <th>Parameter</th>
+                        <th>Type</th>
+                        <th>Description</th>
+                        <th>Example</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><code>Search</code></td>
+                        <td>string</td>
+                        <td>Filter by search keyword in product title</td>
+                        <td><code>Search=laptop</code></td>
+                    </tr>
+                    <tr>
+                        <td><code>Category</code></td>
+                        <td>string</td>
+                        <td>Filter by category</td>
+                        <td><code>Category=electronics</code></td>
+                    </tr>
+                    <tr>
+                        <td><code>SortBy</code></td>
+                        <td>string</td>
+                        <td>Field to sort by (<code>title</code>, <code>price</code>)</td>
+                        <td><code>SortBy=price</code></td>
+                    </tr>
+                    <tr>
+                        <td><code>Descending</code></td>
+                        <td>bool</td>
+                        <td>Sort direction (<code>true</code> for DESC, <code>false</code> for ASC)</td>
+                        <td><code>Descending=true</code></td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h4><i class="bi bi-tools"></i> Technologies Used</h4>
+            <ul>
+                <li>ASP.NET Core MVC</li>
+                <li>Razor Views</li>
+                <li>Bootstrap 5</li>
+                <li>HttpClient (in <code>ProductApiService</code>)</li>
+                <li>Fake Store API (external source)</li>
+            </ul>
+
+            <h4><i class="bi bi-lightbulb-fill"></i> Example Usage</h4>
+            <ul>
+                <li>Type “bag” in the search box → filtered results show instantly.</li>
+                <li>Select <code>electronics</code> category → only electronics appear.</li>
+                <li>Sort by <code>Price</code> descending → high to low pricing.</li>
+                <li>Click <strong>Clear Filters</strong> → all filters reset.</li>
+            </ul>
+
+            <h4><i class="bi bi-exclamation-triangle-fill"></i> Notes for Development</h4>
+            <ul>
+                <li>Backend API must be running and accessible.</li>
+                <li>Filters use GET parameters for sharable URLs.</li>
+                <li>Product API is consumed via registered <code>HttpClient</code>.</li>
+            </ul>
+        </div>
+    </div>
+</div>
